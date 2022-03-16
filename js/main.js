@@ -4,8 +4,6 @@ function getRandomArbitrary(min, max) {
     return Math.round(Math.random() * (max - min) + min);
   }
 
-
-
   function replaceImage() {
     let random = getRandomArbitrary(1, total);
     document.getElementById("left").src = "images/" + random + "_left.jpg";
