@@ -1,0 +1,62 @@
+<head>
+  
+    <script src="https://cdn.tailwindcss.com"></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+   <!-- Primary Meta Tags -->
+   <title>detailtiger</title>
+   <meta name="title" content="Detailtiger">
+   <meta name="description" content="store images on a server with the speed of a tiger">
+   <meta name="theme-color" content="#A78BFA">
+   
+   
+   <!-- Open Graph / Facebook -->
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://cdn.detailtiger.com/">
+   <meta property="og:title" content="cdn.detailtiger.com">
+   <meta property="og:description" content="store images on a server with the speed of a tiger">
+   
+   <!-- Twitter -->
+   <meta property="twitter:card" content="summary_large_image">
+   <meta property="twitter:url" content="https://cdn.detailtiger.com/">
+   <meta property="twitter:title" content="cdn.detailtiger.com">
+   <meta property="twitter:description" content="store images on a server with the speed of a tiger">
+   
+   <style>
+       .jj {
+        transition-property: opacity;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 450ms;
+        }
+   </style>
+   </head>
+   
+   <body>
+    <div class="bg-slate-300 p-10 space-y-5 flex flex-col justify-center relative min-h-screen">
+        <h1 class="text-center text-3xl font-bold">ID: <span id="id">51</span></h1>
+        <div class="grid grid-cols-2 gap-4 max-w-lg mx-auto">
+          <div onclick="downloadLeft();" class="relative">
+            <img id="left" class="duration-300 mx-auto rounded-3xl shadow-lg aspect-square peer min-w-full" src="https://cdn.detailtiger.com/images/1.jpg" />
+            <div class="bg-transparent h-full justify-center w-full flex peer-hover:opacity-100 hover:opacity-100 jj opacity-0 backdrop-blur-sm absolute top-0 rounded-3xl">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 self-center text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </div>
+          </div>
+          <div onclick="downloadRight();" class="relative">
+            <img id="right" class="duration-300 mx-auto rounded-3xl shadow-lg aspect-square peer" src="https://cdn.detailtiger.com/images/2.jpg" />
+            <div class="bg-transparent h-full justify-center w-full flex peer-hover:opacity-100 hover:opacity-100 jj opacity-0 backdrop-blur-sm absolute top-0 rounded-3xl">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 self-center text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="text-center space-y-2 sm:space-y-0">
+          <button class="px-8 py-2 w-full sm:w-auto bg-violet-500 mx-auto rounded-full hover:shadow-lg duration-300 text-white" onclick="replaceImage();">Random</button>
+        </div>
+      </div>
+      
+
+      <script src="js/main.js"></script>
+   </body>
