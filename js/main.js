@@ -1,4 +1,4 @@
-let total = 6 + 1;
+let total = 6;
 
 function getRandomArbitrary(min, max) {
     return Math.round(Math.random() * (max - min) + min);
