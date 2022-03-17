@@ -52,21 +52,32 @@
     transform: none;
     animation: fadeIn 0.5s both;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+background: #cbd5e1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #324054;
+}
   </style>
 </head>
 
 <body>
-  <style></style>
   <div class="bg-slate-300 space-y-5 relative min-h-screen overflow-x-hidden">
-    <div class="flex px-10 py-3 bg-slate-400" id="nav">
+    <div class="flex flex-col md:flex-row px-10 py-3 bg-slate-400" id="nav">
       <div class="">
         <h1 class="font-bold text-2xl uppercase text-slate-700">Befist.com</h1>
       </div>
       <div
-        class="w-full float-right justify-end items-center flex space-x-6 text-slate-800"
+        class="w-full float-right md:justify-end items-center flex space-x-6 text-slate-800"
       >
-        <a class="hover:text-violet-500" href="https://befist.com/">Random</a>
-        <a class="hover:text-violet-500">Anime</a>
+      <a class="hover:text-violet-500" href="/index">Random</a>
+      <a class="hover:text-violet-500" href="/anime">Anime</a>
         <a class="hover:text-violet-500" disabled>Three</a>
       </div>
     </div>
@@ -78,20 +89,6 @@
       <h1 id="butt" onclick="load();" class="w-full select-none">Load More</h1>
     </div>
 
-  </div>
-    <div class="text-center space-y-2 sm:space-y-0 pt-10"></div>
-  </div>
-  <div
-    class="p-2 w-full bg-slate-400 bottom-0 text-center text-slate-700"
-  >
-    <a
-      class="text-sm hover:text-violet-700 duration-300"
-      href="https://github.com/itshoozi/Matching-PFPs"
-      target="_blank"
-      >github</a
-    >
-    <p class="font-semibold">jeremy was here</p>
-  </div>
 
   <script src="js/listing.js"></script>
 </body>

@@ -1,5 +1,4 @@
-var postLength = 7;
-let arr = [1, 2, 3, 4, 5, 6, 1001];
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 1001, 1002, 1003];
 let currentIndex = 0;
 const button = document.getElementById("butt")
 
@@ -24,7 +23,7 @@ Array.prototype.shuffle = function () {
 
 
   // and the result is...
-  function load(amount=2) {
+  function load(amount=8) {
     if(currentIndex == arr.length-1) return;
     const newIndex = Math.min(currentIndex+amount+1,arr.length)
     for (let e = currentIndex; e < newIndex;e++) {

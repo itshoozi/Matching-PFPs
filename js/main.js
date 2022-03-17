@@ -1,4 +1,4 @@
-let total = 6;
+let total = 13;
 
 function getRandomArbitrary(min, max) {
     return Math.round(Math.random() * (max - min) + min);
@@ -14,7 +14,6 @@ function getRandomArbitrary(min, max) {
     setTimeout(function () {
       left.classList.remove("-translate-x-10");
       right.classList.remove("translate-x-10");
-      document.getElementById("id").innerHTML = random;
     }, 140);
   }
   
