@@ -1,4 +1,4 @@
-let total = 13;
+let total = 31;
 
 function getRandomArbitrary(min, max) {
     return Math.round(Math.random() * (max - min) + min);
