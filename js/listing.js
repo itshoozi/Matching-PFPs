@@ -38,7 +38,7 @@ Array.prototype.shuffle = function () {
       fileType = 'jpg';
     }
       document.getElementById('content').innerHTML += '<div id="'+ [i] + '" class="grid grid-cols-2 gap-4 max-w-lg mx-auto fadeIn">' +
-      '<a href="images/' + [i] + '_left.' + fileType + '" download class="relative w-full h-32 w-32 aspect-square">' +
+      '<a href="images/' + [i] + '_left.' + fileType + '" download class="relative w-full min-w-[100px] min-h-[100px]  aspect-square">' +
       '<img id="'+ [i] + '_left" class="duration-300 mx-auto rounded-3xl shadow-lg aspect-square peer min-w-full" src="images/' + i + '_left.' + fileType + '" alt="matching profile pictures" />' +
         '<div class="bg-transparent h-full justify-center w-full flex peer-hover:opacity-100 hover:opacity-100 jj opacity-0 backdrop-blur-sm absolute top-0 rounded-3xl">' +
           '<svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 self-center text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">' +
@@ -46,7 +46,7 @@ Array.prototype.shuffle = function () {
           '</svg>' +
         '</div>' +
       '</a>' +
-      '<a href="images/' + [i] + '_right.' + fileType + '" download class="relative w-full w-32 h-32 aspect-square">' +
+      '<a href="images/' + [i] + '_right.' + fileType + '" download class="relative w-full min-w-[100px] min-h-[100px]   aspect-square">' +
         '<img id="'+ [i] + '_right" class="duration-300 mx-auto rounded-3xl shadow-lg aspect-square peer" src="images/' + i + '_right.' + fileType + '" alt="matching profile pictures" />' +
         '<div class="bg-transparent h-full justify-center w-full flex peer-hover:opacity-100 hover:opacity-100 jj opacity-0 backdrop-blur-sm absolute top-0 rounded-3xl">' +
           '<svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 self-center text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">' +
